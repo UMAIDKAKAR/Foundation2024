@@ -1,0 +1,18 @@
+body {
+    background-color: gray;
+}
+
+p {
+    font-size: 36px;
+    color: rgb(247, 243, 244);
+    text-align: center;
+}
+
+#secondParagraph {
+background-color: black;
+}
+
+.commonParagraph {
+    text-decoration: underline;
+    font-size: 24px;
+}
