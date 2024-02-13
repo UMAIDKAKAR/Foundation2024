@@ -1,0 +1,37 @@
+.img1 
+        {
+             height: 200px;
+             width: 200px;  
+        }
+
+.img2 
+        {
+            height: 200px;
+            width: 800px;
+        }
+
+.font1 
+        {
+            font-style: italic;
+            font-family: fantasy;
+            color: white;
+            background-color: black;
+        }
+
+a
+        {
+            text-decoration: none;
+            font-size: large;
+            letter-spacing: 2px;              
+        }
+
+.div1
+        {
+            background-color: rgb(142, 129, 129);
+        }  
+
+        a:hover {
+            font-size: 30px;
+            color: red;
+            font-style: bold;
+        }
