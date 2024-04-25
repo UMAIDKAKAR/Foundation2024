@@ -1,0 +1,73 @@
+.navclass {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 35px;
+}
+
+.h1class {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px;
+    margin: auto;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    align-items: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+.blocksclass {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px;
+}
+
+.blocksclass {
+    background-color: blue;
+    color: yellowgreen;
+    /* align-content: center;
+    align-items: center; */
+    margin: 5px;
+}
+
+/* .block1class {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: orange;
+} */
+
+.block2class {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: red;
+}
+
+.block3class {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: lightcoral;
+}
+
+.block4class {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(24, 212, 68);
+}
+
+.block1class {
+    display: flex;
+    /* align-items: center;
+    align-content: center; */
+    height: 300px;
+    width: 300px;
+    /* align-items: center; */
+    margin: 10px;   
+}
+
+.blockinside1 {
+    align-items: center;
+    align-content: center;
+}

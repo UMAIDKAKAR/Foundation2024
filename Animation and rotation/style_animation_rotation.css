@@ -1,0 +1,145 @@
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .square {
+	width: 150px;
+	height: 150px;
+	margin: 1rem 0 2rem 1rem;
+	background-color: blue;
+  position: relative;
+}
+
+/* Blue to green */
+#color .square {
+transition-property: background-color;
+transition-duration: 5s;
+}
+
+#color .square:hover {
+  background-color: green;
+}
+
+
+/* Square to circle */
+#circle .square {
+transition: border-radius 2s 5s, background-color 3s 2s;
+}
+
+#circle .square:hover { 
+  border-radius: 50%;
+  background-color: purple;
+}
+
+
+#scale .square div {
+  background-color: #000;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 75px;
+  height: 75px;
+  transition: transform 5s, background-color 2s 1s;
+}
+
+#scale .square div:hover {
+  background-color: blue;
+  transform: scale(2,2);
+}
+
+#rotate .square {
+  background-color: tomato;
+  text-align: center;
+  color: white;
+  transition: transform 5s;
+}
+
+#rotate .square:hover {
+  transform: rotate(360deg);
+}
+
+#translate .square {
+  background-color: orange;
+  transition: transform 5s ease-in, background-color 3s 1s;
+}
+
+#translate .square:hover {
+  background-color: green;
+  transform: translateX(900px) rotate(360deg);
+}
+
+#rotate-gears {
+  display: block;
+}
+
+
+.big_gear {
+  border: 1px solid gray;
+  top: 0px;
+  left: 300px;
+  transition: transform 12s 2s ease-in;  
+}
+
+.small_gear {
+  border: 1px solid gray;
+  top: 0px;
+  left: -177px;
+  transition: transform 10s ease-in;
+}
+
+#rotate-gears:hover > .small_gear {
+  transform: rotate(-360deg);
+}
+
+#rotate-gears:hover > .big_gear {
+  transform: rotate(360deg);  
+}
+
+.box {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 50px 50px;
+  border: 1px solid black;
+  position: relative;
+  perspective: 600px;
+}
+
+.box div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+}
+
+.rotate3d {
+  background: hsla(240, 70%, 50%, 0.5);
+}
+.translate3d {
+  background: hsla(120, 70%, 50%, 0.5);
+}
+.scale3d {
+  background: hsla(320, 70%, 50%, 0.5);
+}
+
+.rotate3d:hover {
+/*   transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+  transform: rotate3d(1, 1, 1, 360deg);
+}
+.translate3d:hover {
+/*   transform: translateX(40px) translateY(40px) translateZ(50px); */
+  transform: translate3d(40px, 40px, 70px);
+}
+.scale3d:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+}
